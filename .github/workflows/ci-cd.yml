@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout del repositorio
@@ -29,7 +29,7 @@ jobs:
           path: .
           deploy:
             needs: build
-            runs-on: debian-latest
+            runs-on: ubuntu-latest
             permissions:
               pages: write
               id-token: write
